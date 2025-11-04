@@ -7,16 +7,18 @@
       - Lưu toàn bộ thông tin tài khoản xuống file accounts.txt khi thoát
 2. Cấu trúc chương trình
   Bao gồm các lớp :
-   Lớp cha : Account là lớp cơ sở, chứa thông tin tài khoản ( số tk, số dư, tên người dùng, lịch sử giao dịch )
-   Lớp con : SavingAccount là tài khoản tiết kiệm có lãi suất
-             StudentAccount là tài khoản sinh viên có mức ưu đãi 50% khi rút tiền
-             BusinessAccount là tài khoản doanh nghiệm có mức phí giao dịch 2%
+   - Lớp cha : Account là lớp cơ sở, chứa thông tin tài khoản ( số tk, số dư, tên người dùng, lịch sử giao dịch )
+   - Lớp con :
+            - SavingAccount là tài khoản tiết kiệm có lãi suất
+            - StudentAccount là tài khoản sinh viên có mức ưu đãi 50% khi rút tiền
+            - BusinessAccount là tài khoản doanh nghiệm có mức phí giao dịch 2%
+       
   Các lớp con đều ghi đè (override) các hàm getType(), showInfo(), và một số hàm khác tùy loại.
   Các hàm hỗ trợ findAccount ( tìm tài khoản theo STK ) và saveAll ( Lưu tài khoản xuống file )
   Các cấu trúc mã nguồn gồm : 
-       title.cpp : Mã nguồn chính của chương trình
-       accounts.txt : File lưu danh sách tài khoản 
-       README.md : File hướng dẫn sử dụng
+      - title.cpp : Mã nguồn chính của chương trình
+      - accounts.txt : File lưu danh sách tài khoản 
+      - README.md : File hướng dẫn sử dụng
 
 3. Cách chạy chương trình
    Bước 1 : Lưu mã nguồn vào file title.cpp
